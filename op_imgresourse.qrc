@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/Resourse">
+        <file>srcs/add.png</file>
+        <file>srcs/cut.png</file>
+        <file>srcs/delete.png</file>
+        <file>srcs/aidi-logo.png</file>
+    </qresource>
+</RCC>
