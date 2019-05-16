@@ -16,8 +16,8 @@ public:
     explicit chooseMode(QWidget *parent = 0);
     ~chooseMode();
 private slots:
-//    void sig_add(int num);
-      void exit();
+    //void sig_add(int num);
+    void exit();
 
 
 private:

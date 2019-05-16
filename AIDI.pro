@@ -44,3 +44,6 @@ FORMS    += aidi.ui \
 
 RESOURCES += \
     op_imgresourse.qrc
+
+TRANSLATIONS+=cn.ts \
+              en.ts

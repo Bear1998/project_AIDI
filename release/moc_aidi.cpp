@@ -19,7 +19,7 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_AIDI_t {
-    QByteArrayData data[7];
+    QByteArrayData data[8];
     char stringdata0[73];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
@@ -33,13 +33,14 @@ QT_MOC_LITERAL(0, 0, 4), // "AIDI"
 QT_MOC_LITERAL(1, 5, 17), // "on_addBtn_clicked"
 QT_MOC_LITERAL(2, 23, 0), // ""
 QT_MOC_LITERAL(3, 24, 7), // "checked"
-QT_MOC_LITERAL(4, 32, 20), // "on_op_cutBut_clicked"
-QT_MOC_LITERAL(5, 53, 9), // "op_addBut"
-QT_MOC_LITERAL(6, 63, 9) // "op_delBut"
+QT_MOC_LITERAL(4, 32, 9), // "op_addBut"
+QT_MOC_LITERAL(5, 42, 9), // "op_cutBut"
+QT_MOC_LITERAL(6, 52, 9), // "op_delBut"
+QT_MOC_LITERAL(7, 62, 10) // "change_lan"
 
     },
     "AIDI\0on_addBtn_clicked\0\0checked\0"
-    "on_op_cutBut_clicked\0op_addBut\0op_delBut"
+    "op_addBut\0op_cutBut\0op_delBut\0change_lan"
 };
 #undef QT_MOC_LITERAL
 
@@ -49,7 +50,7 @@ static const uint qt_meta_data_AIDI[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -57,14 +58,16 @@ static const uint qt_meta_data_AIDI[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   34,    2, 0x08 /* Private */,
-       4,    1,   37,    2, 0x08 /* Private */,
-       5,    0,   40,    2, 0x08 /* Private */,
-       6,    0,   41,    2, 0x08 /* Private */,
+       1,    1,   39,    2, 0x08 /* Private */,
+       4,    0,   42,    2, 0x08 /* Private */,
+       5,    0,   43,    2, 0x08 /* Private */,
+       6,    0,   44,    2, 0x08 /* Private */,
+       7,    0,   45,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Bool,    3,
-    QMetaType::Void, QMetaType::Bool,    3,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -78,9 +81,10 @@ void AIDI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_addBtn_clicked((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 1: _t->on_op_cutBut_clicked((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 2: _t->op_addBut(); break;
+        case 1: _t->op_addBut(); break;
+        case 2: _t->op_cutBut(); break;
         case 3: _t->op_delBut(); break;
+        case 4: _t->change_lan(); break;
         default: ;
         }
     }
@@ -111,13 +115,13 @@ int AIDI::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

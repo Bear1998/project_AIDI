@@ -9,6 +9,7 @@ chooseMode::chooseMode(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->chooseBtn1,SIGNAL(clicked(bool)),this,SLOT(exit()));
     connect(ui->chooseBtn2,SIGNAL(clicked(bool)),this,SLOT(exit()));
+
     connect(ui->chooseBtn3,SIGNAL(clicked(bool)),this,SLOT(exit()));
     connect(ui->chooseBtn4,SIGNAL(clicked(bool)),this,SLOT(exit()));
 

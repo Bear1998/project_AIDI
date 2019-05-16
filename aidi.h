@@ -11,6 +11,9 @@
 #include <QStatusBar>
 #include <QDebug>
 #include <QIcon>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QTranslator>
 
 namespace Ui {
 class AIDI;
@@ -32,18 +35,21 @@ public:
     op_addSourse* add_sour;
     op_cutsourse* cut_sour;
     op_delsourse* del_sour;
-    void slt_add(int num);
+    //void slt_add(int num);
+    void retranslate_ui();
 
 private slots:
-    void on_addBtn_clicked(bool checked);  
-    //void on_op_addBut_clicked(bool checked);
-    void on_op_cutBut_clicked(bool checked);
+    void on_addBtn_clicked(bool checked);
 
     void op_addBut();
+    void op_cutBut();
     void op_delBut();
+
+    void change_lan();
 
 private:
     Ui::AIDI *ui;
+    int num = 1;
 };
 
 #endif // AIDI_H

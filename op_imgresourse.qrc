@@ -4,5 +4,7 @@
         <file>srcs/cut.png</file>
         <file>srcs/delete.png</file>
         <file>srcs/aidi-logo.png</file>
+        <file>cn.qm</file>
+        <file>en.qm</file>
     </qresource>
 </RCC>
